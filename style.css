@@ -168,6 +168,36 @@ html {
   background-size: cover;
   background-position: center center; }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(wnętrze.png);
+  /* Początkowe tło czarne */
+  background-attachment: fixed;
+  background-size: cover;
+  /* Obraz będzie pokrywał całe tło zachowując proporcje */
+  background-position: center center;
+  max-width: 100%;
+  /* Dodaj tę regułę, aby ograniczyć szerokość obrazu do szerokości ekranu */
+  max-height: 100%;
+  z-index: 1;
+  animation: fadeOut 6s ease-in-out forwards; }
+
+.content {
+  position: relative;
+  z-index: 2; }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    display: none;
+    /* Dodaję, aby ukryć overlay po zakończeniu animacji */ } }
+
 .cytat {
   grid-column: 1 / 5;
   grid-row: 1 / 4;
@@ -387,15 +417,22 @@ label {
   background-color: none;
   text-align: center;
   line-height: 50px;
-  font-size: 26px;
-  animation: naszaAnimacja 7s linear infinite;
-  transform-origin: 50% 50% 200px; }
+  font-size: 26px; }
 
-@keyframes naszaAnimacja {
-  0% {
-    transform: perspective(300px) rotateY(0) translateX(0); }
-  100% {
-    transform: perspective(300px) rotateY(360deg) translateX(150px); } }
+.animated-text {
+  font-size: 24px;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #000;
+  /* Dla efektu migania kreski */
+  animation: typing 5s steps(40) infinite; }
+
+@keyframes typing {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
 
 .top {
   color: black;
