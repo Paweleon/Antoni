@@ -1,0 +1,530 @@
+@charset "UTF-8";
+/*navigation styling */
+.navigation {
+  width: 40rem;
+  height: 3rem;
+  background: linear-gradient(-8deg, #0b8793, #ba05b1);
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  font-family: "Amita", sans-serif;
+  list-style: none; }
+  .navigation__navigation li {
+    list-style: none; }
+  .navigation__list {
+    padding: 0.5rem;
+    text-align: center;
+    align-items: center;
+    transition: all 0.5s; }
+  .navigation__menu {
+    list-style: none; }
+    .navigation__menu__menu li {
+      list-style: none;
+      padding: 0 1rem;
+      text-shadow: 0.01rem 0.01rem 0.02rem blue; }
+
+.navigation__dropdown {
+  position: relative; }
+
+.dropdown__icon {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 0.05rem;
+  font-size: 1.5rem;
+  margin: 0.5rem; }
+
+.dropdown__icon:hover {
+  background-color: #b2046f;
+  border-radius: 1rem;
+  color: yellow; }
+
+.dropdown__item {
+  padding: 0.5rem; }
+
+.dropdown__menu {
+  justify-content: space-around;
+  text-align: left;
+  position: absolute;
+  background: linear-gradient(-8deg, #ba05b1, #0b8793);
+  padding: 0.1rem;
+  list-style-type: none;
+  margin: 0.05rem;
+  border-radius: 1rem;
+  display: none; }
+
+.dropdown__item:hover {
+  background-color: #b2046f;
+  width: 100%;
+  border-radius: 1rem; }
+
+.dropdown__link {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  padding: 0.2rem;
+  margin: 0;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem; }
+
+.dropdown__link:hover {
+  color: yellow;
+  background: 100%; }
+
+.navigation__dropdown a:focus + ul,
+.navigation__dropdown a:hover + ul,
+.navigation__dropdown ul:hover {
+  display: block; }
+
+.div__logo {
+  width: 32rem;
+  height: 19rem;
+  margin: 1rem; }
+
+.logo {
+  width: 34rem;
+  height: 18rem; }
+
+/*Zdjęcia__główna*/
+.photo {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 1rem; }
+
+.church__info {
+  width: 20rem;
+  height: 20rem;
+  margin: 1rem; }
+
+.church__duty {
+  width: 20rem;
+  height: 20rem;
+  margin: 1rem; }
+
+.Antoni {
+  width: 20rem;
+  height: 20rem;
+  margin: 1rem; }
+
+.village__palace {
+  width: 20rem;
+  height: 20rem;
+  margin: 1rem; }
+
+/*Zdjęcia__Aktualności*/
+.rap {
+  width: 20rem;
+  height: 13rem;
+  display: inline-block;
+  margin: 1rem;
+  padding: 0.5rem;
+  border: 0.02rem solid black; }
+
+.rap__img {
+  width: 17rem;
+  height: 8rem;
+  margin: 1rem;
+  text-align: center; }
+
+/*Zdjęcia__historia*/
+.gallery {
+  background: #000;
+  height: 34rem;
+  margin: 1rem;
+  border-radius: 1rem; }
+
+.picture {
+  display: block;
+  width: 40rem;
+  height: 30rem; }
+
+.priest {
+  width: 13rem;
+  height: 25rem;
+  margin: 1rem; }
+
+.priest__img {
+  width: 13rem;
+  height: 25rem; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*:after,
+*::before {
+  box-sizing: inherit;
+  font-size: 1.5vw; }
+
+.body {
+  display: grid;
+  grid-template-columns: repeat(4, 16.25rem);
+  grid-template-rows: repeat(57, 4rem);
+  font-family: "Amita", sans-serif;
+  background-image: url(tło.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center; }
+
+.cytat {
+  grid-column: 1 / 5;
+  grid-row: 1 / 4;
+  font-size: 1.5rem;
+  margin: 1rem;
+  text-align: center;
+  color: whitesmoke; }
+
+header {
+  grid-column: 1 / 5;
+  border-radius: 2rem;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  grid-row: 4 / 12;
+  justify-content: center; }
+
+.main {
+  grid-column: 1 / 5;
+  border-radius: 2rem;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  grid-row: 12 / 54;
+  overflow: auto;
+  background: #1ac9d7;
+  background: linear-gradient(0deg, rgba(26, 201, 215, 0.787553) 11%, #fffefd 83%); }
+
+.footer {
+  grid-column: 1 / 5;
+  border-radius: 2rem;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  grid-row: 54 / 56;
+  justify-content: space-around; }
+
+.sectionheader {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 1rem;
+  color: #3d0372; }
+
+h3 {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #3d0372; }
+
+h4 {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #3d0372; }
+
+ul {
+  text-align: center;
+  padding: 0;
+  margin: 0.8rem; }
+
+li {
+  list-style: none;
+  font-size: 0.8rem; }
+
+.paragraph {
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 1rem;
+  color: black; }
+
+/*strona główna*/
+.section__info {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  border-bottom: 0.02rem solid #828385; }
+
+.section__duty {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  border-bottom: 0.02rem solid #828385; }
+
+.section__antoni {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  border-bottom: 0.02rem solid #828385; }
+
+.section__village {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  border-bottom: 0.02rem solid #828385; }
+
+/*Aktualności*/
+.section__announcement {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  border-bottom: 0.02rem solid #828385; }
+
+.section__information {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  border-bottom: 0.02rem solid #828385; }
+
+.section__forum {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  border-bottom: 0.02rem solid #828385; }
+
+label {
+  display: block; }
+
+.section__rap {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  border-bottom: 0.02rem solid #828385;
+  justify-content: space-around;
+  width: 620px; }
+
+/*Sakramenty*/
+.section__penance {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  border-bottom: 0.02rem solid #828385; }
+
+.section__baptism {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  border-bottom: 0.02rem solid #828385; }
+
+.section__communion {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  border-bottom: 0.02rem solid #828385; }
+
+.section__marriage {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  border-bottom: 0.02rem solid #828385; }
+
+/*Historia*/
+.section__history {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  border-bottom: 0.02rem solid #828385; }
+
+.section__priest {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  border-bottom: 0.02rem solid #828385; }
+
+/*Inne*/
+.paragraph {
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 1rem;
+  color: black; }
+
+.info__paragraph {
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 1rem;
+  color: black; }
+
+.info__span {
+  font-weight: bolder; }
+
+/*Animacje*/
+.Birthday {
+  width: 300px;
+  height: 150px;
+  margin: 0 auto;
+  background-color: none;
+  text-align: center;
+  line-height: 50px;
+  font-size: 26px;
+  animation: naszaAnimacja 7s linear infinite;
+  transform-origin: 50% 50% 200px; }
+
+@keyframes naszaAnimacja {
+  0% {
+    transform: perspective(300px) rotateY(0) translateX(0); }
+  100% {
+    transform: perspective(300px) rotateY(360deg) translateX(150px); } }
+
+.top {
+  color: black;
+  text-decoration: underline;
+  font-weight: bolder;
+  position: fixed; }
+
+.slides {
+  position: relative;
+  display: block; }
+
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  transition: opacity 4s; }
+
+.slide:first-child {
+  position: relative; }
+
+.show {
+  z-index: 3;
+  opacity: 1; }
+
+.next,
+.prev {
+  color: #fff;
+  position: absolute;
+  background: #000;
+  background: black;
+  top: 45%;
+  z-index: 5;
+  font-size: 3rem;
+  opacity: 0.5;
+  user-select: none;
+  /*określamy, że użytkownik nie może tego zaznaczayć, ani kopiować*/ }
+
+.next:hover,
+.prev:hover,
+nav button:hover {
+  cursor: pointer;
+  opacity: 1; }
+
+.next {
+  top: 8rem;
+  right: -5.2rem;
+  padding: 5rem 2rem 6rem 2rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  margin-bottom: 4rem; }
+
+.prev {
+  top: 8rem;
+  left: -5.2rem;
+  padding: 5rem 2rem 6rem 2rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem; }
+
+.buttons {
+  text-align: center;
+  line-height: 3rem;
+  position: relative; }
+
+nav ul > li {
+  display: inline-block;
+  list-style-type: none; }
+
+nav ul {
+  margin: 0;
+  padding: 0; }
+
+.pin {
+  background: #000;
+  color: #fff;
+  position: relative;
+  border: none;
+  outline: none; }
+
+nav ul > li button {
+  width: 1rem;
+  height: 2rem;
+  line-height: 1.5rem;
+  font-size: 3rem;
+  opacity: 0.7; }
+
+nav ul > li button:before {
+  content: "\2022";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; }
+
+nav ul > li button.selected {
+  opacity: 1; }
+
+.play {
+  background: white;
+  color: black;
+  position: absolute;
+  width: 4rem;
+  height: 3rem;
+  font-size: 1rem;
+  line-height: 1.7rem;
+  right: 1rem;
+  bottom: -0.3rem; }
+
+.play:before {
+  content: "\25B6";
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  width: 3rem; }
+
+.play.on:before {
+  content: "\23f8"; }
+
+@media (max-width: 600px) {
+  .paragraph {
+    font-size: 2rem; }
+  .info__span {
+    font-size: 2rem; }
+  .sectionheader {
+    font-size: 2.2rem; }
+  h2 {
+    font-size: 2.1rem; }
+  h3 {
+    font-size: 2rem; }
+  h4 {
+    font-size: 2rem; } }

@@ -1,0 +1,87 @@
+.div__logo {
+    width: 32rem;
+    height: 19rem;
+    margin: 1rem;
+}
+
+.logo {
+    width: 34rem;
+    height: 18rem;
+}
+
+/*Zdjęcia__główna*/
+.photo {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 1rem;
+}
+
+@mixin photo {
+    width: 20rem;
+    height: 20rem;
+    margin: 1rem;
+  }
+
+  .church__info {
+    @include photo;
+  }
+  
+  .church__duty {
+    @include photo;
+  }
+
+  .Antoni {
+    @include photo;
+  }
+
+ .village__palace {
+    @include photo;
+  }
+
+  
+  /*Zdjęcia__Aktualności*/
+  
+  .rap {
+    width: 20rem;
+    height: 13rem;
+    display: inline-block;
+    margin: 1rem;
+    padding: 0.5rem;
+    border: 0.02rem solid black;
+  }
+  .rap__img {
+    width: 17rem;
+    height: 8rem;
+    margin: 1rem;
+    text-align: center;
+  }
+
+
+  /*Zdjęcia__historia*/
+
+  .gallery {
+    background: #000;
+    height: 34rem;
+    margin: 1rem;
+    border-radius: 1rem;
+  }
+
+  .picture {
+    display: block;
+    width: 40rem;
+    height: 30rem;
+  }
+
+  .priest {
+    width: 13rem;
+    height: 25rem;
+    margin: 1rem;
+  }
+   
+  .priest__img {
+    width: 13rem;
+    height: 25rem;
+  }
+
+
+
