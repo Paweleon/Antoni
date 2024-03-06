@@ -247,11 +247,8 @@ label {
 }
 
 .animated-text {
-  font-size: 24px;
-  font-family: 'Arial', sans-serif;
   overflow: hidden;
   white-space: nowrap;
-  border-right: 2px solid #000; /* Dla efektu migania kreski */
   animation: typing 5s steps(40) infinite;
 }
 
