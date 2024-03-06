@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*navigation styling */
 .navigation {
-  width: 40rem;
-  height: 3rem;
+  width: 60rem;
+  height: 6rem;
   background: linear-gradient(-8deg, #0b8793, #ba05b1);
   border-radius: 2rem;
   display: flex;
@@ -32,7 +32,7 @@
   color: white;
   text-decoration: none;
   letter-spacing: 0.05rem;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   margin: 0.5rem; }
 
 .dropdown__icon:hover {
@@ -67,7 +67,7 @@
   margin: 0;
   color: white;
   text-decoration: none;
-  font-size: 1rem; }
+  font-size: 2rem; }
 
 .dropdown__link:hover {
   color: yellow;
@@ -166,7 +166,14 @@ html {
   background-image: url(tło.png);
   background-attachment: fixed;
   background-size: cover;
-  background-position: center center; }
+  background-position: center center;
+  animation: scrollAnimation 40s linear infinite; }
+
+@keyframes scrollAnimation {
+  0% {
+    background-position: 0% 0%; }
+  100% {
+    background-position: 0% 100%; } }
 
 .overlay {
   position: fixed;

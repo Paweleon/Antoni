@@ -23,6 +23,16 @@ $font-family: "Amita", sans-serif;
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
+  animation: scrollAnimation 40s linear infinite;
+}
+
+@keyframes scrollAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
 }
 
 .overlay {
@@ -97,7 +107,6 @@ header {
   grid-row: 4 / 12;
   justify-content: center;
 }
-
 .main {
   @include possition;
   grid-row: 12 / 54;
