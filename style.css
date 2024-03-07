@@ -164,14 +164,14 @@ html {
   grid-template-rows: repeat(57, 4rem);
   font-family: "Amita", sans-serif;
   background-image: url(tło.png);
-  background-attachment: fixed;
-  background-size: cover;
+  background-attachment: scroll;
+  background-size: contain;
   background-position: center center;
-  animation: scrollAnimation 40s linear infinite; }
+  animation: scrollAnimationY 260s linear infinite; }
 
-@keyframes scrollAnimation {
+@keyframes scrollAnimationY {
   0% {
-    background-position: 0% 0%; }
+    background-position: 0% 10%; }
   100% {
     background-position: 0% 100%; } }
 
