@@ -106,6 +106,10 @@ header {
   @include possition;
   grid-row: 4 / 12;
   justify-content: center;
+  background-image: url(logo1.png);
+  background-size: cover, 25% ; /* Obraz będzie pokrywał całe tło zachowując proporcje */
+  background-position: center center;
+  
 }
 .main {
   @include possition;
