@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Przekierowanie po wprowadzeniu poprawnego hasła
             window.location.href = 'Forum_bierzmowanie.html';
         } else {
-            alert('Oho! Komputer zainfekował się wirusem Archanioła Michała, albo ktoś popełnił literówkę :) Trzeba wpisać 8 x "i".');
+            alert('Oho! Wirus Judasz zainfekował ten komputer, albo ktoś popełnił literówkę :) Trzeba wpisać 8 x "i".');
         }
     });
 });
